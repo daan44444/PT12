@@ -3,7 +3,7 @@ session_start();
 
 $GLOBALS['config'] = array(
     'mysql' => array(
-        'host' => '', //Enter host here
+        'host' => 'studmysql01.fhict.local', //Enter host here
         'username' => 'dbi389333', //Enter username here
         'password' => 'i389333', //Enter password here
         'db' => 'dbi389333' //Enter db here
