@@ -10,9 +10,9 @@ $GLOBALS['config'] = array(
     ),
     'db' => array(
         'user_table_name' => 'user',
-        'user_confirm_table_name' => 'user_confirm',
-        'user_forgot_table_name' => 'user_forgot',
-        'user_session_table_name' => 'user_session',
+        'user_confirm_table_name' => 'users_confirm',
+        'user_forgot_table_name' => 'users_forgot',
+        'user_session_table_name' => 'users_session',
         'groups_table_name' => 'groups',
         'user_uname_field_name' => 'email'
     ),

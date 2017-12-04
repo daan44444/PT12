@@ -32,19 +32,33 @@ class Login extends Controller
                             $forgot = new Forgot();
                             $forgot->delete($id);
 
-                            Session::flash('home', 'Logged in');
-                            Redirect::to('index.php');
+                            //Session::flash('home', 'Logged in');
+                            Redirect::to('test/lol');
                         } else {
                             //Not logged in
-                            Session::flash('login', 'Error logging in');
-                            Redirect::to($redirect);
                         }
                     } else {
                         $errors = $validation->errors();
                     }
                 }
             } else if(Input::get('register') !== '') {
+                if(Token::check(Input::get('token'))) {
 
+                    $validate = new Validate();
+                    $validation = $validate->check($_POST, array(
+                        'email' => array(
+                            'required' => true,
+                            'check_email' => true
+                        )
+                    ));
+
+                    if($validation->passed()) {
+                        $user = new User();
+                        
+                    } else {
+                        $errors = $validation->errors();
+                    }
+                }
             }
 
         }
