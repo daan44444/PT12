@@ -32,7 +32,7 @@ class DB {
                     $x++;
                 }
             }
-
+            
             if($this->_query->execute()) {
                 $this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
                 $this->_count = $this->_query->rowCount();

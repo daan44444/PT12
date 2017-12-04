@@ -21,7 +21,7 @@ class Mail {
         </head>
         <body>
             <h1>Almost ready!</h1>
-            <p>Click <a href='{$confirm_location}?id={$id}&cc={$cc}'>here</a> to confirm your account</p>
+            <p>Click <a href='{$confirm_location}{$id}/{$cc}'>here</a> to confirm your account</p>
             <p>This link is valid until {$expire}</p>
 
         </body>

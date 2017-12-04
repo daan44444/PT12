@@ -2,10 +2,10 @@
 
 class Home extends Controller
 {
-    public function index($name = '')
+    public function index()
     {
         $this->view('default/head');
-        $this->view('home/index', ['name' => $name]);
+        $this->view('home/index');
         $this->view('default/bodyEnd');
     }
 }
