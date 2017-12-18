@@ -5,6 +5,9 @@
 <!-- misc -->
 <script type="text/javascript" src="js/functions.js"></script>
 <!-- 2-pages -->
-
+<script type="text/javascript" src="js/4-pages/home.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap/popper.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
