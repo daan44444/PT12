@@ -63,13 +63,13 @@ class Confirm {
 
                     } else {
                         if($this->setup($email)) {
-                            $this->addError("This link is expired, a new link is sent to your email");
+                            $this->addError("Expired");
                         } else {
                             $this->addError("Fatal error");
                         }
                     }
                 } else {
-                    $this->addError("Confirm code does not match");
+                    $this->addError("iCode");
                 }
             } else {
                 if($this->delete($id)) {
