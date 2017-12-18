@@ -96,6 +96,10 @@ header .logo-wrapper .inner img {
     margin: 10px 0;
 }
 
+.lower .left form .field.margin {
+    margin: 10px 0;
+}
+
 .lower .left form .field label.absolute {
     text-align: left;
     position: absolute;
@@ -105,7 +109,7 @@ header .logo-wrapper .inner img {
     font-size:18px;
 }
 
-.lower .left form .field input[type="email"], .lower .left form .field input[type="password"] {
+.lower .left form .field input {
     width: 390px;
     height:50px;
     font-size:28px;
@@ -210,6 +214,15 @@ a.forgot:hover, a.forgot:active {
     border-radius: 5px;
     border: 2px solid #e20505;
     background:#ff8a80;
+}
+
+.errors.green {
+    border: 2px solid #4caf50;
+    background:#b9f6ca;
+}
+
+.errors ul {
+    margin: 10px 0;
 }
 
 .errors ul li {

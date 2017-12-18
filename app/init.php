@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $GLOBALS['config'] = array(
     'mysql' => array(
         'host' => 'studmysql01.fhict.local', //Enter host here
@@ -10,9 +12,9 @@ $GLOBALS['config'] = array(
     ),
     'db' => array(
         'user_table_name' => 'user',
-        'user_confirm_table_name' => 'user_confirm',
-        'user_forgot_table_name' => 'user_forgot',
-        'user_session_table_name' => 'user_session',
+        'user_confirm_table_name' => 'users_confirm',
+        'user_forgot_table_name' => 'users_forgot',
+        'user_session_table_name' => 'users_session',
         'groups_table_name' => 'groups',
         'user_uname_field_name' => 'email'
     ),
@@ -32,9 +34,9 @@ $GLOBALS['config'] = array(
         'password_min' => 6
     ),
     'confirm' => array(
-        'location' => '',
-        'from' => '',
-        'reply_to' => '',
+        'location' => 'http://i389119.hera.fhict.nl/PT12/login/',
+        'from' => 'confirm@FoodChamp.com',
+        'reply_to' => 'noreply@FoodChamp.com',
         'valid_time' => '+1 hour'
     ),
     'forgot' => array(
@@ -67,7 +69,8 @@ $GLOBALS['config'] = array(
         'default' => 'Europe/Amsterdam'
     ),
     'url' => array(
-        'inc_root' => dirname(__DIR__)
+        'inc_root' => dirname(__DIR__),
+        'base' => '/PT12/public/'
     ),
     'app' => array(
         'default_controller' => 'home',

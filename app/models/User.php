@@ -27,9 +27,7 @@ class User {
     }
 
     public function create($fields = array()) {
-        if(!$this->_db->insert(Config::get('db/user_table_name'), $fields)) {
-            throw new Exception('There was a problem creating an account.');
-        }
+        $this->_db->insert(Config::get('db/user_table_name'), $fields);
     }
 
     public function find($user = null) {

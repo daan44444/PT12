@@ -6,7 +6,7 @@ $title = $lang->getText('title');
 <!DOCTYPE html>
 <html dir="ltr" lang="<?= $lang->getLang(); ?>">
 <head>
-    <base href="<?= $_SERVER['REQUEST_URI'] ?>">
+    <base href="<?= Config::get('url/base') ?>">
     <meta charset="<?= Config::get('meta/charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">

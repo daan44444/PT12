@@ -1,29 +1,3 @@
-<!-- css 4-pages -->
-<link rel="stylesheet" type="text/css" href="css/4-pages/login.css?time=<?= date("Y-m-d h:i:s"); ?>"/>
-
-</head>
-<body>
-<div class="content-wrap">
-    <div class="content">
-        <header>
-            <div class="top">
-                <div class="white">
-                    <div class="triangle left">
-
-                    </div>
-                    <div class="triangle right">
-
-                    </div>
-                </div>
-            </div>
-            <div class="logo-wrapper flex flex--justify-content-center">
-                <div class="inner">
-                    <img src="img/logo-home-700x400.png" alt="Logo">
-                </div>
-            </div>
-        </header>
-
-        <div class="lower flex">
             <div class="left flex flex--h-center">
                 <form action="" method="post">
                     <div class="field">
@@ -53,7 +27,8 @@
                     <?php
                     $errors = $data['errors'];
                     if($errors) {
-                        echo "<div class=\"errors\"><ul>";
+                        $passed = $data['registerPassed'] == true ? "green": "";
+                        echo "<div class=\"errors {$passed}\"><ul>";
                         foreach ($errors as $error) {
                             echo "<li>{$error}</li>";
                         }
@@ -62,15 +37,3 @@
                     ?>
                 </form>
             </div>
-            <div class="divider"></div>
-            <div class="right flex flex--h-center">
-                <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
