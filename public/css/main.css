@@ -2,7 +2,7 @@
 @import url(1-tools/animate.css);
 @import url(1-tools/font-awesome.min.css);
 @import url(1-tools/fonts.css);
-@import url(1-tools/materialize.min.css); 
+/*@import url(1-tools/materialize.min.css); */
 @import url(1-tools/normalize.css);
 @import url(1-tools/vars.css);
 /* 2 - basics */
@@ -17,4 +17,4 @@
 /* 4 - pages */
 /* Bootstrap */
 @import url(bootstrap/bootstrap.min.css);
-@import url(1-tools/datepicker.css);
+/*@import url(1-tools/datepicker.css);*/
